@@ -1,9 +1,9 @@
 # useSecureLocalStorage
 
-[![npm version](https://img.shields.io/npm/v/usesecurelocalstorage.svg)](https://www.npmjs.com/package/usesecurelocalstorage)  
-[![license](https://img.shields.io/npm/l/usesecurelocalstorage.svg)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/secure-local-storage-hook.svg)](https://www.npmjs.com/package/secure-local-storage-hook)  
+[![license](https://img.shields.io/npm/l/secure-local-storage-hook.svg)](LICENSE)
 
-**useSecureLocalStorage** is a supercharged version of React's `useState` hook, designed to securely store and persist state in the browser's local storage. Built on top of [react-secure-storage](https://www.npmjs.com/package/react-secure-storage), this library not only encrypts your data but also ensures strict typing and synchronization for the most up-to-date state.
+**useSecureLocalStorage** is a supercharged version of React's `useState` hook, designed to securely store and persist state in the browser's local storage with typescript support. So that, a user can make sure strictly typed data while storing or retrieving from local storage. Built on top of [react-secure-storage](https://www.npmjs.com/package/react-secure-storage), this library not only encrypts your data but also ensures strict typing and synchronization for the most up-to-date state.
 
 ---
 
@@ -21,7 +21,11 @@
 To install the library, use the following command:
 
 ```bash
-npm i usesecurelocalstorage
+npm i secure-local-storage-hook
+
+or
+
+yarn add secure-local-storage-hook
 ```
 
 ---
@@ -32,6 +36,8 @@ Here’s an example of how to use **useSecureLocalStorage** in your React applic
 
 ```tsx
 // Define your custom type
+import useSecureLocalStorage from "secure-local-storage-hook";
+
 type AppleType = {
   name: string;
   color: string;
